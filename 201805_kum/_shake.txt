@@ -1,0 +1,6 @@
+U“®‚³‚¹‚é(10F–ˆ)
+add(frame_input, 10)
+randomAdd(main_ax_input,-5,5)
+randomAdd(main_ay_input,-5,5)
+randomAdd(main_az_input,-5,5)
+click(bone_reg)

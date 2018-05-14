@@ -1,0 +1,4 @@
+振動挿入(10Fx50)
+msgbox(センターを選択してから続行してください)
+set(frame_input,0)
+loop(.\_shake.txt,50)

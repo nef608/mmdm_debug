@@ -1,0 +1,15 @@
+モデルロード
+
+;読み込むファイルを指定
+var(file,D:\project\MMD\MikuMikuDance_v926x64\震盪マキマキ.pmm)
+
+menu(1,1)
+dialogOpen(新規作成)
+dialogClick(Button1)
+dialogClose()
+sleep(1000)
+menu(1,2)
+dialogOpen(ファイルを開く)
+dialogSetStr(Edit1,${file})
+dialogClick(Button1)
+dialogClose()

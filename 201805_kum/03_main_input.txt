@@ -1,0 +1,22 @@
+ピクピク除去,input指定,click
+;--------------------------------------
+input(1,repeat,「100」を入力)
+msgbox(「右カミ1」「右カミ1-2」「左カミ1」「左カミ1-2」を選択してください。\nこのダイアログを閉じてから3秒後に起動します。\n3秒の間にアクティブウィンドウを調整してください。)
+sleep(3000)
+;--------------------------------------
+set(frame_input,0)
+click(bone_reg)
+menu(6,3)
+get(frame_input,start)
+loop(.\_loop_click.txt, repeat)
+get(frame_input,end)
+select(frame_rsel_menu,4)
+set(frame_rselstart_input,start)
+set(frame_rselend_input,end)
+click(frame_rsel)
+menu(6,17)
+dialogOpen()
+dialogSelect(Combobox1,2)
+dialogClick(Button1)
+dialogClose()
+menu(6,1)
